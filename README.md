@@ -22,7 +22,51 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+为sass添加了
+
+  ### zl_std_reverse, [:string]
+
+  翻转字符串
+
+  ### zl_std_run, [:string]
+
+  执行一段shell
+
+  ### zl_std_sqrt, [:number]
+
+  开平方
+
+  ### zl_std_utils_strip_unit, [:number]
+
+  去除unit
+
+  ### zl_std_math_pi, []
+
+  得到pi
+
+  ### zl_std_math_cos, [:number]
+
+  math cos
+
+  ### zl_std_math_sin, [:number]
+
+  math sin
+
+  ### zl_std_math_tan, [:number]
+
+  math tan
+
+  ### zl_std_math_acos, [:number]
+
+  math acos
+
+  ### zl_std_math_asin, [:number]
+
+  math asin
+
+  declare :zl_std_math_atan, [:number]
+
+  math atan
 
 ## Development
 
