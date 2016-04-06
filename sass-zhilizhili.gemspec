@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.email         = ["lbc19920631@163.com"]
 
   spec.summary       = %q{sass extend function}
-  spec.description   = %q{Write a longer description or delete this line.}
-  spec.homepage      = "http://www.zhilizhili.com"
+  spec.description   = %q{a lib can extend sass function}
+  spec.homepage      = "https://github.com/andypinet/sass-zhilizhili"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.

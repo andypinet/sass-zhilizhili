@@ -22,6 +22,8 @@ Or install it yourself as:
 
 ## Usage
 
+Refer https://github.com/HugoGiraudel/awesome-sass
+
 为sass添加了
 
   ### zl_std_reverse, [:string]
