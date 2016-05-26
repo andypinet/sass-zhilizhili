@@ -36,6 +36,11 @@ module Sass::Script::Functions
   end
   declare :zl_std_utils_strip_unit, [:number]
 
+  def zl_std_math_sqrt(num)
+    numeric_transformation(num) {|num| CMath.sqrt(num) }
+  end
+  declare :zl_std_math_sqrt, [:number]
+
   def zl_std_math_pi()
     pi = 3.1415926
     Sass::Script::Number.new(pi)
