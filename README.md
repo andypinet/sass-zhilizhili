@@ -77,6 +77,18 @@ Refer https://github.com/HugoGiraudel/awesome-sass
 
   math atan
 
+2016 7 月新发布 0.15 
+
+添加 
+
+正则匹配
+
+zl-std-str-match(str, regexp) -> list
+
+获取本地图片大小
+
+zl-std-image-size(path) -> list
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.

@@ -1,6 +1,7 @@
 require "sass/zhilizhili/version"
 require "sass"
 require "cmath"
+require 'image_size'
 
 module Sass
   module Zhilizhili
@@ -76,4 +77,28 @@ module Sass::Script::Functions
     numeric_transformation(num) {|num| CMath.atan(num) }
   end
   declare :zl_std_math_atan, [:number]
+
+  def zl_std_str_match(str, regexp)
+    if res = str.value.scan(/#{regexp.value}/)
+      ret = res.map {|str| 
+        Sass::Script::Value::String.new(str)
+      }
+      list(ret, :comma)
+    else
+      list(Array.new, :comma)
+    end  
+  end
+  declare :zl_std_str_match, [:string, :string]
+
+  def zl_std_image_size(path) 
+    if res = ImageSize.path(path.value).size
+      ret = res.map {|size| 
+        Sass::Script::Value::Number.new(size)
+      }
+      list(ret, :comma)
+    else
+      list(Array.new, :comma)
+    end
+  end
+  declare :zl_std_image_size, [:string]
 end
